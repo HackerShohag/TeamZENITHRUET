@@ -5,16 +5,16 @@ export const siteConfig = {
 	description: "Our team consists of young, experienced and intellectual individuals who have the experience of work.",
 	navItems: [
 		{
-			label: "Blog",
-			href: "/blog",
-		},
-		{
 			label: "About",
 			href: "/about",
 		},
 		{
-			label: "Sponsors",
-			href: "/sponsors",
+			label: "Projects",
+			href: "/projects",
+		},
+		{
+			label: "Team",
+			href: "/team",
 		},
 		{
 			label: "Contact Us",
@@ -50,16 +50,10 @@ export const siteConfig = {
 			label: "Help & Feedback",
 			href: "/help-feedback",
 		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-		sponsor: "https://patreon.com/jrgarciadev"
+		linkedIn: "https://www.linkedin.com/company/annexe-ruet/",
+		github: "https://github.com/Team-Annexe-RUET",
+		facebook: "https://www.facebook.com/annexe.ruet",
 	},
 };
