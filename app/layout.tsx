@@ -7,6 +7,8 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
+import { Logo } from "@/components/icons";
+
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
@@ -37,6 +39,12 @@ export default function RootLayout({
 					"min-h-screen bg-background font-sans antialiased",
 					fontSans.variable
 				)}
+
+			// style={{
+			// 	backgroundImage: "url('/annexe-cover.png')",
+			// 	backgroundSize: "cover",
+			// 	backgroundAttachment: "fixed",
+			// }}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
@@ -51,8 +59,7 @@ export default function RootLayout({
 								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
 								title="nextui.org homepage"
 							>
-								<span className="text-default-600">Powered by</span>
-								<p className="text-primary">NextUI</p>
+								<Logo size={150} />
 							</Link>
 						</footer>
 					</div>
