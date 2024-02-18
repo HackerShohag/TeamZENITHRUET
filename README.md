@@ -1,3 +1,5 @@
+![Build Status](https://github.com/Team-Annexe-RUET/ANNEXE-Web-Front/nextjs.yml/badge.svg)
+
 # Next.js & NextUI Template
 
 This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
