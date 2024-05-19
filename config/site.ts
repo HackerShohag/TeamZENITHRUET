@@ -55,5 +55,6 @@ export const siteConfig = {
 		linkedIn: "https://www.linkedin.com/company/annexe-ruet/",
 		github: "https://github.com/Team-Annexe-RUET",
 		facebook: "https://www.facebook.com/annexe.ruet",
+		docs: '',
 	},
 };
