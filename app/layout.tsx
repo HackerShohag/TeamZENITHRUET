@@ -8,6 +8,7 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 import { Logo } from "@/components/icons";
+import FooterSection from "@/components/footer";
 
 export const metadata: Metadata = {
 	title: {
@@ -44,23 +45,25 @@ export default function RootLayout({
 			// 	backgroundImage: "url('/annexe-cover.png')",
 			// 	backgroundSize: "cover",
 			// 	backgroundAttachment: "fixed",
+			// 	// position: "relative",
 			// }}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+						<main className="container mx-auto max-w-7xl pt-10 px-6 flex-grow">
 							{children}
 						</main>
-						<footer className="w-full flex items-center justify-center py-3">
-							<Link
+						<footer className="w-full flex items-center justify-center">
+							{/* <Link
 								isExternal
 								className="flex items-center gap-1 text-current"
 								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
 								title="nextui.org homepage"
 							>
 								<Logo size={150} />
-							</Link>
+							</Link> */}
+							<FooterSection />
 						</footer>
 					</div>
 				</Providers>

@@ -14,14 +14,14 @@ export const Logo: React.FC<IconSvgProps & { theme?: string }> = ({
 	<>
 		<Image
 			src={"/annexe-white.png"}
-			className="hidden dark:block"
+			className={`hidden dark:block ${props.className}`}
 			height={size ?? height}
 			width={size ?? width}
 			alt="Team ANNEXE logo"
 		/>
 		<Image
 			src={"/annexe-black.png"}
-			className="dark:hidden"
+			className={`flex dark:hidden ${props.className}`}
 			height={size ?? height}
 			width={size ?? width}
 			alt="Team ANNEXE logo"

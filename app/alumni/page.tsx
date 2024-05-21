@@ -1,9 +1,9 @@
-import { subtitle, title } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import MemberTable from "@/components/memberTable";
 import { teamMembers, teamHead } from "@/lib/data/team-members";
 
 
-export default function ProjectsPage() {
+export default function AlumniPage() {
 	return (
 		<div>
 			<div className="inline-block max-w-lg text-center justify-center font-bold">

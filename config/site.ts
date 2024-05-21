@@ -17,18 +17,22 @@ export const siteConfig = {
 			href: "/team",
 		},
 		{
+			label: "Advisor",
+			href: "/advisor",
+		},
+		// {
+		// 	label: "Alumni",
+		// 	href: "/alumni",
+		// },
+		{
 			label: "Contact Us",
 			href: "/contact",
 		}
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "About",
+			href: "/about",
 		},
 		{
 			label: "Projects",
@@ -39,22 +43,23 @@ export const siteConfig = {
 			href: "/team",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "Advisor",
+			href: "/advisor",
 		},
+		// {
+		// 	label: "Alumni",
+		// 	href: "/alumni",
+		// },
 		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
+			label: "Contact Us",
+			href: "/contact",
+		}
 	],
 	links: {
 		linkedIn: "https://www.linkedin.com/company/annexe-ruet/",
 		github: "https://github.com/Team-Annexe-RUET",
 		facebook: "https://www.facebook.com/annexe.ruet",
+		mail: "mailto:contact@teamannexeruet.info",
 		docs: '',
 	},
 };
