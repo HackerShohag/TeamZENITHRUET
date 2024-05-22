@@ -30,21 +30,21 @@ function FooterSection() {
                     </Link>
                     <Link
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
-                        href="/events/fairs"
+                        href="/projects"
                     >
-                        Career Fair
+                        Projects
                     </Link>
                     <Link
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
-                        href="/events"
+                        href="/team"
                     >
-                        Events
+                        Team
                     </Link>
                     <Link
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
-                        href="/ex-com"
+                        href="/advisor"
                     >
-                        Committee
+                        Advisors
                     </Link>
                     <Link
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
