@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "@nextui-org/link";
 import { Divider } from "@nextui-org/react";
 import { siteConfig } from '@/config/site';
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { Logo } from './icons';
 
 function FooterSection() {
@@ -14,7 +14,7 @@ function FooterSection() {
                         <FaFacebook className="text-2xl text-default-300 dark:text-default-500" />
                     </Link>
                     <Link isExternal href={siteConfig.links.linkedIn} aria-label="Discord">
-                        <FaLinkedin className="text-2xl text-default-300 dark:text-default-500" />
+                        <FaLinkedinIn className="text-2xl text-default-300 dark:text-default-500" />
                     </Link>
                     <Link isExternal href={siteConfig.links.github} aria-label="Github">
                         <FaGithub className="text-2xl text-default-300 dark:text-default-500" />
