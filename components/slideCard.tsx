@@ -12,7 +12,8 @@ import 'swiper/css/pagination';
 import '@/styles/swiper.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
+import { Image } from '@nextui-org/image';
 
 
 export default function SlideCard() {
@@ -40,7 +41,7 @@ export default function SlideCard() {
                     modifier: 1,
                     slideShadows: true,
                 }}
-                modules={[EffectCoverflow, Pagination]}
+                modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
                 className="mySwiper"
                 loop={true}
                 autoplay={{
@@ -51,7 +52,7 @@ export default function SlideCard() {
                 {
                     images.map((image, index) => (
                         <SwiperSlide key={index}>
-                            <img src={image} alt="slide" />
+                            <Image src={image} alt="slide" radius='none' />
                         </SwiperSlide>
                     ))
                 }
