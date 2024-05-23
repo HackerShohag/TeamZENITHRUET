@@ -19,12 +19,16 @@ import { Image } from '@nextui-org/image';
 export default function SlideCard() {
 
     const images = [
-        '/gallery/1.jpg',
-        '/gallery/2.jpg',
-        '/gallery/3.jpg',
-        '/gallery/1.jpg',
-        '/gallery/2.jpg',
-        '/gallery/3.jpg',
+        '/gallery/nasa1.jpg',
+        '/gallery/nasa2.jpg',
+        '/gallery/nasa3.jpg',
+        '/gallery/chegRepublic1.jpg',
+        '/gallery/chegRepublic2.jpg',
+        '/gallery/fkdc1.jpg',
+        '/gallery/fkdc2.jpg',
+        '/gallery/fkdc3.jpg',
+        '/gallery/fkdc4.jpg',
+        '/gallery/fkdc5.jpg',
     ];
 
     return (

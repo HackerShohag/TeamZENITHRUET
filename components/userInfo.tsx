@@ -4,8 +4,8 @@ import { FaEnvelope, FaFacebook, FaGlobe, FaLinkedin } from 'react-icons/fa'
 
 export interface TeamMemberInfoProps {
     name: string;
-    description: string;
-    avatarSrc: string;
+    designation: string;
+    avatarSrc?: string;
     email: string;
     linkedin?: string;
     facebook?: string;
@@ -13,14 +13,14 @@ export interface TeamMemberInfoProps {
 }
 
 export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoProps | undefined }) {
-    const { name, description, avatarSrc, email, linkedin, facebook, website } = userInfo || {};
+    const { name, designation, avatarSrc, email, linkedin, facebook, website } = userInfo || {};
 
     return (
         <div>
             <User
                 name={name}
-                description={description}
-                className='flex flex-col items-center'
+                description={designation}
+                className='flex flex-col items-center my-1'
                 classNames={{
                     wrapper: "flex flex-col items-center",
                     name: "text-2xl font-bold",
