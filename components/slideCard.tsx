@@ -20,14 +20,21 @@ export default function SlideCard() {
 
     const images = [
         '/gallery/nasa1.jpg',
-        '/gallery/nasa2.jpg',
-        '/gallery/nasa3.jpg',
-        '/gallery/chegRepublic1.jpg',
-        '/gallery/chegRepublic2.jpg',
         '/gallery/fkdc1.jpg',
+        '/gallery/chegRepublic1.jpg',
+        '/gallery/nasa2.jpg',
+        '/gallery/chegRepublic2.jpg',
+        '/gallery/recruitment1.jpg',
         '/gallery/fkdc2.jpg',
         '/gallery/fkdc3.jpg',
+        '/gallery/nasa3.jpg',
+        '/gallery/seminar2.jpg',
+        '/gallery/nasa6.jpg',
+        '/gallery/chegRepublic3.jpg',
         '/gallery/fkdc4.jpg',
+        '/gallery/nasa4.jpg',
+        '/gallery/seminar1.jpg',
+        '/gallery/nasa5.jpg',
         '/gallery/fkdc5.jpg',
     ];
 
