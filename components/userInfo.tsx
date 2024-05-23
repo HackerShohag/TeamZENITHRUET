@@ -6,7 +6,7 @@ export interface TeamMemberInfoProps {
     name: string;
     designation: string;
     avatarSrc?: string;
-    email: string;
+    email?: string;
     linkedin?: string;
     facebook?: string;
     website?: string;
