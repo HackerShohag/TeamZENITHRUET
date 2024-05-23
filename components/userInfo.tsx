@@ -1,16 +1,7 @@
 import React from 'react'
 import { Link, User } from '@nextui-org/react'
 import { FaEnvelope, FaFacebook, FaGlobe, FaLinkedin } from 'react-icons/fa'
-
-export interface TeamMemberInfoProps {
-    name: string;
-    designation: string;
-    avatarSrc?: string;
-    email?: string;
-    linkedin?: string;
-    facebook?: string;
-    website?: string;
-}
+import { TeamMemberInfoProps } from '@/types/member';
 
 export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoProps | undefined }) {
     const { name, designation, avatarSrc, email, linkedin, facebook, website } = userInfo || {};
