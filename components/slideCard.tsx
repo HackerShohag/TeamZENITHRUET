@@ -55,8 +55,8 @@ export default function SlideCard() {
             >
                 {
                     images.map((image, index) => (
-                        <SwiperSlide key={index}>
-                            <Image src={image} alt="slide" radius='none' />
+                        <SwiperSlide key={index} className='overflow-hidden'>
+                            <Image src={image} alt="slide" radius='none' className='h-full' />
                         </SwiperSlide>
                     ))
                 }
