@@ -7,7 +7,7 @@ export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoP
     const { name, designation, avatarSrc, email, linkedin, facebook, website } = userInfo || {};
 
     return (
-        <div>
+        <div className='my-5'>
             <User
                 name={name}
                 description={designation}
@@ -21,7 +21,7 @@ export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoP
                     isBordered: true,
                     color: "success",
                     src: avatarSrc,
-                    className: "w-40 h-40 text-large"
+                    className: "w-40 h-40 text-large",
                 }}
             />
             <div className="flex flex-row w-full gap-3 justify-center">

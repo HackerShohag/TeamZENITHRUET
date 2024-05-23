@@ -11,12 +11,12 @@ export default function MemberTable({ teamMembers, teamHead }: MemberTableProps)
 
     return (
         <div className="block">
-            <div className='flex flex-row flex-wrap justify-center gap-20'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 justify-center'>
                 {teamHead.map((member, index) => (
                     <TeamMemberInfo key={index} userInfo={member} />
                 ))}
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 mt-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-30 mt-10'>
                 {teamMembers.map((member, index) => (
                     <TeamMemberInfo key={index} userInfo={member} />
                 ))}
