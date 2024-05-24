@@ -14,8 +14,8 @@ export default function AboutPage() {
 			{/* <h2 className="text-2xl py-5"></h2> */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 max-w-6xl my-10">
 				<div className="flex w-full border rounded-md items-center justify-center">
-					<Image classNames={{ wrapper: "hidden dark:sm:flex max-sm:hidden" }} className="hidden dark:flex max-sm:hidden w-auto" width={700} src={annexeWhiteLogo.src} alt="Annexe Logo" />
-					<Image classNames={{ wrapper: "dark:hidden max-sm:hidden" }} className="dark:hidden max-sm:hidden w-auto" width={700} src={annexeDarkLogo.src} alt="Annexe Logo" />
+					<Image classNames={{ wrapper: "hidden dark:sm:flex" }} className="hidden dark:flex w-auto" width={700} src={annexeWhiteLogo.src} alt="Annexe Logo" />
+					<Image classNames={{ wrapper: "dark:hidden" }} className="dark:hidden w-auto" width={700} src={annexeDarkLogo.src} alt="Annexe Logo" />
 				</div>
 				<div>
 					<h2 className="text-lg py-5 text-left mx-5">
