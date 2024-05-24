@@ -1,4 +1,4 @@
-import { subtitle, title } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import MemberTable from "@/components/memberTable";
 import { teamMembers, teamHead } from "@/lib/data/team-members";
 
