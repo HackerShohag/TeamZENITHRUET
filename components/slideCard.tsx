@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,52 +15,40 @@ import '@/styles/swiper.css';
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 import { Image } from '@nextui-org/image';
 
+interface SlideCardProps {
+    images: string[];
+}
 
-export default function SlideCard() {
-
-    const images = [
-        '/gallery/nasa1.jpg',
-        '/gallery/nasa2.jpg',
-        '/gallery/nasa3.jpg',
-        '/gallery/chegRepublic1.jpg',
-        '/gallery/chegRepublic2.jpg',
-        '/gallery/fkdc1.jpg',
-        '/gallery/fkdc2.jpg',
-        '/gallery/fkdc3.jpg',
-        '/gallery/fkdc4.jpg',
-        '/gallery/fkdc5.jpg',
-    ];
+export default function SlideCard({ images }: SlideCardProps) {
 
     return (
-        <>
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 60,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                }}
-                modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-                className="mySwiper"
-                loop={true}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
-            >
-                {
-                    images.map((image, index) => (
-                        <SwiperSlide key={index} className='overflow-hidden'>
-                            <Image src={image} alt="slide" radius='none' className='h-full' />
-                        </SwiperSlide>
-                    ))
-                }
-            </Swiper>
-        </>
+        <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            coverflowEffect={{
+                rotate: 60,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            }}
+            modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+            className="swiper-slide-card"
+            loop={true}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
+        >
+            {
+                images.map((image, index) => (
+                    <SwiperSlide key={index} className='overflow-hidden'>
+                        <Image src={image} alt="slide" radius='none' className='h-full' />
+                    </SwiperSlide>
+                ))
+            }
+        </Swiper>
     )
 }

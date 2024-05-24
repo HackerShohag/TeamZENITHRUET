@@ -7,6 +7,19 @@ import SlideCard from "@/components/slideCard";
 import annexeDarkLogo from '@/public/annexe-black.png';
 import annexeWhiteLogo from '@/public/annexe-white.png';
 
+const images = [
+	'/gallery/nasa1.jpg',
+	'/gallery/nasa2.jpg',
+	'/gallery/nasa3.jpg',
+	'/gallery/chegRepublic1.jpg',
+	'/gallery/chegRepublic2.jpg',
+	'/gallery/fkdc1.jpg',
+	'/gallery/fkdc2.jpg',
+	'/gallery/fkdc3.jpg',
+	'/gallery/fkdc4.jpg',
+	'/gallery/fkdc5.jpg',
+];
+
 export default function Home() {
 
 	return (
@@ -27,7 +40,6 @@ export default function Home() {
 								Our team consists of young, experienced and interactual individuals who have the experience of the work and invention.
 							</h2>
 						</div>
-						{/* <Logo className="max-sm:hidden h-auto" size={300} /> */}
 						<Image classNames={{ wrapper: "hidden dark:sm:flex max-sm:hidden" }} className="hidden dark:flex max-sm:hidden w-auto max-w-80" width={400} src={annexeWhiteLogo.src} alt="Annexe Logo" />
 						<Image classNames={{ wrapper: "dark:hidden max-sm:hidden" }} className="dark:hidden max-sm:hidden w-auto max-w-80" width={400} src={annexeDarkLogo.src} alt="Annexe Logo" />
 					</div>
@@ -40,7 +52,7 @@ export default function Home() {
 			</div>
 
 			{/* <ImageSlideShow images={images} /> */}
-			<SlideCard />
+			<SlideCard images={images} />
 
 		</section>
 	);

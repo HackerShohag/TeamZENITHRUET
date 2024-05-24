@@ -22,6 +22,10 @@
 
 .swiper {
     width: 100%;
+}
+
+.swiper-slide-card {
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }

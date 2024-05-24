@@ -3,7 +3,10 @@ import { Link } from "@nextui-org/link";
 import { Divider } from "@nextui-org/react";
 import { siteConfig } from '@/config/site';
 import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { Image } from "@nextui-org/image";
 import { Logo } from './icons';
+
+import annexeWhiteLogo from '@/public/annexe-white.png';
 
 function FooterSection() {
     return (
@@ -61,7 +64,8 @@ function FooterSection() {
                     href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
                     title="nextui.org homepage"
                 >
-                    <Logo size={150} theme='dark' />
+                    {/* <Logo size={150} theme='dark' /> */}
+                    <Image className="max-w-48" src={annexeWhiteLogo.src} alt="Annexe Logo" />
                 </Link>
             </div>
         </div>

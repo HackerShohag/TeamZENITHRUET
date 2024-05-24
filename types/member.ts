@@ -1,4 +1,4 @@
-export interface TeamMemberInfoProps {
+export type TeamMemberInfoProps = {
     name: string;
     designation: string;
     avatarSrc?: string;
@@ -8,7 +8,7 @@ export interface TeamMemberInfoProps {
     website?: string;
 }
 
-export interface AdvisorMemberInfoProps {
+export type AdvisorMemberInfoProps = {
     name: string;
     designation: string;
     department: string;

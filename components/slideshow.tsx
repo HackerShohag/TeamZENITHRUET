@@ -25,12 +25,9 @@ export default function ImageSlideShow({ images }: ImageSlideShowProps) {
                     delay: 3000,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
                 // navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper rounded-lg"
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
