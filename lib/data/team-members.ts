@@ -13,7 +13,7 @@ export const teamHead: TeamMemberInfoProps[] = [
   {
     name: "Md Shayan Elias Rahib",
     designation: "Team Manager",
-    avatarSrc: "/team23-24/2.jpg",
+    avatarSrc: "/team23-24/2.png",
     email: "rahibelias@gmail.com",
     facebook: "https://www.facebook.com/rahib.elias",
     linkedin: "https://www.linkedin.com/in/rahib-elias",
@@ -25,7 +25,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Raian Haq",
     designation: "Technical Lead",
-    avatarSrc: "/team23-24/3.jpg",
+    avatarSrc: "/team23-24/3.png",
     email: "raianhaque43@gmail.com ",
     facebook: "https://www.facebook.com/raian.haque.39",
     linkedin: "https://www.linkedin.com/in/raian-haque-a4a0751b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -34,7 +34,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Md Rakibul Islam",
     designation: "Design Lead",
-    avatarSrc: "/team23-24/4.jpg",
+    avatarSrc: "/team23-24/4.png",
     email: "rakibulislam62434@gmail.com",
     facebook: "https://www.facebook.com/rakibulislam.rakib.7796420?mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/md-rakibul-islam170",
@@ -43,7 +43,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Shal Sabila Mostofa",
     designation: "Businesses Team Lead",
-    avatarSrc: "/team23-24/5.jpeg",
+    avatarSrc: "/team23-24/5.png",
     email: "shalsabilame90@gmail.com",
     facebook: "https://www.facebook.com/cadet.sabila?mibextid=LQQJ4d",
     linkedin: "https://www.linkedin.com/in/sabilamostofa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -52,7 +52,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Ahnaf Hasan ",
     designation: "Electrical Team Lead ",
-    avatarSrc: "/team23-24/6.jpeg",
+    avatarSrc: "/team23-24/6.png",
     email: "h.ahnaf@outlook.com",
     facebook: "Facebook.com/ahnaf141",
     linkedin: "http://linkedin.com/in/ahnaf-h-b73039124",
@@ -61,7 +61,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Mohiful Islam",
     designation: "Quality Assurance & Safety Officer",
-    avatarSrc: "/team23-24/7.jpg",
+    avatarSrc: "/team23-24/7.png",
     email: "mohifulislam264@gmail.com",
     facebook: "https://www.facebook.com/mohiful.islam.712?mibextid=ZbWKwL",
     linkedin: "",
@@ -79,7 +79,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Mustakim Ahmed Soikat",
     designation: "Legislative Lead",
-    avatarSrc: "/team23-24/9.jpg",
+    avatarSrc: "/team23-24/9.png",
     email: "mustakimsoikot@gmail.com",
     facebook: "https://www.facebook.com/mustakimahmed.soikot?mibextid=ZbWKwL",
     linkedin: "",
@@ -88,7 +88,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Rony Sarker",
     designation: "Manufacturing Lead",
-    avatarSrc: "/team23-24/10.jpg",
+    avatarSrc: "/team23-24/10.png",
     email: "ronysarker034@gmail.com",
     facebook: "https://www.facebook.com/profile.php?id=100023480811306&mibextid=ZbWKwL",
     linkedin: "",
@@ -97,7 +97,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Farhan Shahriar Rikto ",
     designation: "Technical Co-lead ",
-    avatarSrc: "/team23-24/11.jpg",
+    avatarSrc: "/team23-24/11.png",
     email: "shahriar.rikto@gmail.com",
     facebook: "https://www.facebook.com/farhan.rikto?mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/farhan-shahriar-rikto-5a1208272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -106,7 +106,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Mayaz Hasan Tanim",
     designation: "Business Co-lead",
-    avatarSrc: "/team23-24/12.jpg",
+    avatarSrc: "/team23-24/12.png",
     email: "mayazhasantanim01@gmail.com",
     facebook: "https://www.facebook.com/mayaz.hasantanim?mibextid=kFxxJD",
     linkedin: "www.linkedin.com/in/mayaz-hasan-tanim-044592211",
@@ -115,7 +115,7 @@ export const teamMembers: TeamMemberInfoProps[] = [
   {
     name: "Samin Yasar Saad",
     designation: "Electrical Team Co-lead",
-    avatarSrc: "/team23-24/13.jpg",
+    avatarSrc: "/team23-24/13.png",
     email: "samin.yasar.saad2000@gmail.com",
     facebook: "https://www.facebook.com/samin.yasar.saad?mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/samin-yasar-saad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
