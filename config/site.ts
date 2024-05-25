@@ -59,7 +59,7 @@ export const siteConfig = {
 		linkedIn: "https://www.linkedin.com/company/annexe-ruet/",
 		github: "https://github.com/Team-Annexe-RUET",
 		facebook: "https://www.facebook.com/annexe.ruet",
-		mail: "mailto:contact@teamannexeruet.info",
+		mail: "contact@teamannexeruet.info",
 		docs: '',
 	},
 };

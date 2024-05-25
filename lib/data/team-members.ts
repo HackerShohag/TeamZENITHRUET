@@ -122,6 +122,14 @@ export const teamMembers: TeamMemberInfoProps[] = [
     website: ""
   },
   {
+    name: "Md Absar Jahan",
+    designation: "Design Team Co-Lead",
+    avatarSrc: "/team23-24/15.png",
+    email: "m.absarjahan10@gmail.com",
+    facebook: "https://www.facebook.com/profile.php?id=100007714327312",
+    linkedin: "www.linkedin.com/in/absar-jahan-16ba491a8"
+  },
+  {
     name: "Imtiaj Ahmad",
     designation: "Senior Technical Crew",
     avatarSrc: "/team23-24/14.png",

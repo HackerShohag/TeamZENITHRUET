@@ -4,9 +4,9 @@ import { Divider } from "@nextui-org/react";
 import { siteConfig } from '@/config/site';
 import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { Image } from "@nextui-org/image";
-import { Logo } from './icons';
 
 import annexeWhiteLogo from '@/public/annexe-white.png';
+import { teamHead } from '@/lib/data/team-members';
 
 function FooterSection() {
     return (
@@ -58,15 +58,25 @@ function FooterSection() {
                 </div>
 
                 <Divider className='bg-gray-500 my-5' />
-                <Link
-                    isExternal
-                    className="flex items-center gap-1 text-current"
-                    href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                    title="nextui.org homepage"
-                >
-                    {/* <Logo size={150} theme='dark' /> */}
-                    <Image className="max-w-48" src={annexeWhiteLogo.src} alt="Annexe Logo" />
-                </Link>
+
+                <div className="grid grid-cols-2">
+                    {
+                        teamHead.map((member, index) => (
+                            <div key={index} className="flex items-center gap-5 mx-3">
+                                <div>
+                                    <p className="text-gray-300 dark:text-gray-400 font-bold">{member.name}</p>
+                                    <p className="text-gray-400 dark:text-gray-500">{member.designation}</p>
+                                    <Link href={`mailto:${member.email}`} className="text-gray-400 dark:text-gray-500">{member.email}</Link>
+                                </div>
+                                {
+                                    index === teamHead.length - 1 ? null : <Divider className='bg-gray-500 my-5' orientation='vertical' />
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
+                <Link href={`mailto:${siteConfig.links.mail}`} className="my-3 text-gray-300 dark:text-gray-400">{siteConfig.links.mail}</Link>
+                <Image className="max-w-36" radius='none' src={annexeWhiteLogo.src} alt="Annexe Logo" />
             </div>
         </div>
     )
