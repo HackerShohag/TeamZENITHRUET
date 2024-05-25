@@ -57,13 +57,13 @@ function FooterSection() {
                     </Link>
                 </div>
 
-                <Divider className='bg-gray-500 my-5' />
+                <Divider className='bg-gray-500 my-3' />
 
                 <div className="grid grid-cols-2">
                     {
                         teamHead.map((member, index) => (
                             <div key={index} className="flex items-center gap-5 mx-3">
-                                <div>
+                                <div className={`${index === 0 ? 'text-right' : ''}`}>
                                     <p className="text-gray-300 dark:text-gray-400 font-bold">{member.name}</p>
                                     <p className="text-gray-400 dark:text-gray-500">{member.designation}</p>
                                     <Link href={`mailto:${member.email}`} className="text-gray-400 dark:text-gray-500">{member.email}</Link>
@@ -75,7 +75,9 @@ function FooterSection() {
                         ))
                     }
                 </div>
-                <Link href={`mailto:${siteConfig.links.mail}`} className="my-3 text-gray-300 dark:text-gray-400">{siteConfig.links.mail}</Link>
+                <Divider className='bg-gray-500 my-3' />
+
+                <Link href={`mailto:${siteConfig.links.mail}`} className="mb-3 text-gray-300 dark:text-gray-400">{siteConfig.links.mail}</Link>
                 <Image className="max-w-36" radius='none' src={annexeWhiteLogo.src} alt="Annexe Logo" />
             </div>
         </div>
