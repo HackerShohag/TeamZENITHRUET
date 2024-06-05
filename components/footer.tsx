@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "@nextui-org/link";
+import NextLink from 'next/link';
 import { Divider } from "@nextui-org/react";
 import { siteConfig } from '@/config/site';
 import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -25,36 +26,41 @@ function FooterSection() {
                 </div>
 
                 <div className="flex justify-center gap-3 flex-wrap">
-                    <Link
+                    <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/"
+                        aria-label='Home Page'
                     >
                         Home
-                    </Link>
-                    <Link
+                    </NextLink>
+                    <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/projects"
+                        aria-label='Projects Page'
                     >
                         Projects
-                    </Link>
-                    <Link
+                    </NextLink>
+                    <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/team"
+                        aria-label='Team Page'
                     >
                         Team
-                    </Link>
-                    <Link
+                    </NextLink>
+                    <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/advisor"
+                        aria-label='Advisor Page'
                     >
                         Advisors
-                    </Link>
-                    <Link
+                    </NextLink>
+                    <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/contact"
+                        aria-label='Contact Us'
                     >
                         Contact Us
-                    </Link>
+                    </NextLink>
                 </div>
 
                 <Divider className='bg-gray-500 my-3' />
