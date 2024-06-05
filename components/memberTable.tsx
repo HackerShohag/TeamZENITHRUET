@@ -4,7 +4,7 @@ import { TeamMemberInfoProps } from '@/types/member';
 
 interface MemberTableProps {
     teamMembers: TeamMemberInfoProps[];
-    teamHead: TeamMemberInfoProps[];
+    teamHead?: TeamMemberInfoProps[];
 }
 
 export default function MemberTable({ teamMembers, teamHead }: MemberTableProps) {
@@ -12,7 +12,7 @@ export default function MemberTable({ teamMembers, teamHead }: MemberTableProps)
     return (
         <div className="block">
             <div className='grid grid-cols-1 sm:grid-cols-2 justify-center'>
-                {teamHead.map((member, index) => (
+                {teamHead && teamHead.map((member, index) => (
                     <TeamMemberInfo key={index} userInfo={member} />
                 ))}
             </div>

@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import MemberTable from "@/components/memberTable";
-import { teamMembers, teamHead } from "@/lib/data/team-members";
+import { teamLeaders } from "@/lib/data/team-members";
 
 
 export default function AlumniPage() {
@@ -14,7 +14,7 @@ export default function AlumniPage() {
 				</h1>
 			</div>
 			<div className="flex my-10">
-				<MemberTable teamMembers={teamMembers} teamHead={teamHead} />
+				<MemberTable teamMembers={teamLeaders} />
 			</div>
 		</div>
 	);
