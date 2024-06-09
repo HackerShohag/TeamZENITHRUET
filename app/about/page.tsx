@@ -83,7 +83,7 @@ export default function AboutPage() {
           <div className="flex flex-col">
             <Image
               radius="none"
-              className="h-96"
+              className="h-full sm:h-96"
               src={chegRepublic1.src}
               alt="FKDC5"
               width={1000}
@@ -95,7 +95,7 @@ export default function AboutPage() {
           <div className="flex flex-col">
             <Image
               radius="none"
-              className="h-96"
+              className="h-full sm:h-96"
               src={recruitment1.src}
               alt="FKDC5"
               width={1000}
