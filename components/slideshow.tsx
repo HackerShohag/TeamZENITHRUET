@@ -27,7 +27,7 @@ export default function ImageSlideShow({ images }: ImageSlideShowProps) {
                 }}
                 // navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper rounded-lg"
+                className="swiper-slide-showcase rounded-lg"
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>

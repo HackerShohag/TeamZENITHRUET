@@ -279,6 +279,42 @@ export const designTeamMembers: TeamMemberInfoProps[] = [
     linkedin: "",
     website: ""
   },
+  {
+    name: "Md. Sanaullah Al Galib",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Design/12.png",
+    email: "sanaullahgalib100@gmail.com",
+    facebook: "https://www.facebook.com/sanaullahgalib.13/",
+    linkedin: "https://www.linkedin.com/in/sanaullah-al-galib-4b4482283",
+    website: ""
+  },
+  {
+    name: "Khondoker Masrur Ahmed",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Design/13.png",
+    email: "k.masrur265@gmail.com",
+    facebook: "https://www.facebook.com/masrur2501",
+    linkedin: "www.linkedin.com/in/kma2501",
+    website: ""
+  },
+  {
+    name: "Shyekh Bin Solayman",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Design/14.png",
+    email: "solayman10938@gmail.com",
+    facebook: "https://www.facebook.com/Xt.solayman?mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/shyekh-bin-solayman-000658312",
+    website: ""
+  },
+  {
+    name: "Tasin Ahmed",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Design/15.png",
+    email: "tasin4560@gmail.com",
+    facebook: "https://www.facebook.com/profile.php?id=61553037115313&mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/tasin-ahmed-3a1456277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    website: ""
+  },
 ];
 
 export const electricalTeamMembers: TeamMemberInfoProps[] = [
@@ -326,6 +362,24 @@ export const electricalTeamMembers: TeamMemberInfoProps[] = [
     facebook: "https://www.facebook.com/alnabil07",
     linkedin: "https://www.linkedin.com/in/alnabil07",
     website: "https://bento.me/alnabil07"
+  },
+  {
+    name: "Khondokar Radwanur Rahman",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Electrical/6.png",
+    email: "radwankhondokar20@gmail.com",
+    facebook: "https://www.facebook.com/radwan.khondokar.7?mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/khondokar-radwanur-rahman-45a268226",
+    website: "https://github.com/rakukanteki"
+  },
+  {
+    name: "Md. Sajidur Rahman",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Electrical/7.png",
+    email: "mdsajidurrahman375@gmail.com",
+    facebook: "https://www.facebook.com/sajidur.rahman.3979489?mibextid=ZbWKwL",
+    linkedin: "",
+    website: ""
   },
 ]
 
@@ -399,6 +453,24 @@ export const technicalTeamMembers: TeamMemberInfoProps[] = [
     avatarSrc: "/team23-24/Technical/8.png",
     email: "nusratjahan20112002@gmail.com",
     facebook: "https://www.facebook.com/profile.php?id=100072735073364",
+    linkedin: "",
+    website: ""
+  },
+  {
+    name: "Md. Monirul Islam",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Technical/9.png",
+    email: "md.monirul.islam6446@gmail.com",
+    facebook: "https://www.facebook.com/monirul.islam.xaan",
+    linkedin: "https://www.linkedin.com/in/md-monirul-islam-12b114308/",
+    website: ""
+  },
+  {
+    name: "Md Tanvir Hasan",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Technical/10.png",
+    email: "tanvir.hasan.ndc@gmail.com",
+    facebook: "https://www.facebook.com/tanvirhasan3714",
     linkedin: "",
     website: ""
   }
