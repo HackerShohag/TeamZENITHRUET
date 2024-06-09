@@ -20,7 +20,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 max-w-6xl my-10">
         <div className="flex w-full rounded-md items-center justify-center">
           <Image
-            classNames={{ wrapper: "hidden dark:sm:flex" }}
+            classNames={{ wrapper: "hidden dark:flex" }}
             className="hidden dark:flex w-auto"
             width={700}
             src={annexeWhiteLogo.src}
