@@ -65,19 +65,25 @@ function FooterSection() {
 
                 <Divider className='bg-gray-500 my-3' />
 
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2">
                     {
                         teamHead.map((member, index) => (
-                            <div key={index} className="flex items-center gap-5 mx-3">
-                                <div className={`${index === 0 ? 'text-right' : ''}`}>
-                                    <p className="text-gray-300 dark:text-gray-400 font-bold">{member.name}</p>
-                                    <p className="text-gray-400 dark:text-gray-500">{member.designation}</p>
-                                    <Link href={`mailto:${member.email}`} className="text-gray-400 dark:text-gray-500">{member.email}</Link>
+                            <>
+                                <div key={index} className="flex items-center gap-5 mx-3">
+                                    <div className={`w-full ${index === 0 ? 'text-center sm:text-right' : 'text-center sm:text-left'}`}>
+                                        <p className="text-gray-300 dark:text-gray-400 font-bold">{member.name}</p>
+                                        <p className="text-gray-400 dark:text-gray-500">{member.designation}</p>
+                                        <Link href={`mailto:${member.email}`} className="text-gray-400 dark:text-gray-500">{member.email}</Link>
+                                    </div>
+                                    {
+                                        index === teamHead.length - 1 || <Divider className='bg-gray-500 my-5 hidden sm:flex' orientation='vertical' />
+                                    }
                                 </div>
                                 {
-                                    index === teamHead.length - 1 ? null : <Divider className='bg-gray-500 my-5' orientation='vertical' />
+                                    index === teamHead.length - 1 || <Divider className='flex bg-gray-500 my-3 sm:hidden' />
                                 }
-                            </div>
+
+                            </>
                         ))
                     }
                 </div>
