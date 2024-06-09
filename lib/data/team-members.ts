@@ -319,6 +319,15 @@ export const designTeamMembers: TeamMemberInfoProps[] = [
 
 export const electricalTeamMembers: TeamMemberInfoProps[] = [
   {
+    name: "Md. Sajidur Rahman",
+    designation: "Team Member",
+    avatarSrc: "/team23-24/Electrical/6.png",
+    email: "mdsajidurrahman375@gmail.com",
+    facebook: "https://www.facebook.com/sajidur.rahman.3979489?mibextid=ZbWKwL",
+    linkedin: "",
+    website: ""
+  },
+  {
     name: "Khondokar Radwanur Rahman",
     designation: "Team Member",
     avatarSrc: "/team23-24/Electrical/1.png",
@@ -362,24 +371,6 @@ export const electricalTeamMembers: TeamMemberInfoProps[] = [
     facebook: "https://www.facebook.com/alnabil07",
     linkedin: "https://www.linkedin.com/in/alnabil07",
     website: "https://bento.me/alnabil07"
-  },
-  {
-    name: "Khondokar Radwanur Rahman",
-    designation: "Team Member",
-    avatarSrc: "/team23-24/Electrical/6.png",
-    email: "radwankhondokar20@gmail.com",
-    facebook: "https://www.facebook.com/radwan.khondokar.7?mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/khondokar-radwanur-rahman-45a268226",
-    website: "https://github.com/rakukanteki"
-  },
-  {
-    name: "Md. Sajidur Rahman",
-    designation: "Team Member",
-    avatarSrc: "/team23-24/Electrical/7.png",
-    email: "mdsajidurrahman375@gmail.com",
-    facebook: "https://www.facebook.com/sajidur.rahman.3979489?mibextid=ZbWKwL",
-    linkedin: "",
-    website: ""
   },
 ]
 
