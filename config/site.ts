@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Team ANNEXE RUET",
+	name: "Team ZENITH RUET",
 	description: "Our team consists of young, experienced and intellectual individuals who have the experience of work.",
 	navItems: [
 		{
@@ -56,10 +56,10 @@ export const siteConfig = {
 		}
 	],
 	links: {
-		linkedIn: "https://www.linkedin.com/company/annexe-ruet/",
-		github: "https://github.com/Team-Annexe-RUET",
-		facebook: "https://www.facebook.com/annexe.ruet",
-		mail: "contact@teamannexeruet.info",
+		linkedIn: "https://www.linkedin.com/company/team-zenith-ruet/",
+		github: "https://github.com/Team-Zenith-RUET",
+		facebook: "https://www.facebook.com/teamzenithruet",
+		mail: "contact@teamzenithruet.info",
 		docs: '',
 	},
 };
