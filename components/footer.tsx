@@ -6,7 +6,7 @@ import { siteConfig } from '@/config/site';
 import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { Image } from "@nextui-org/image";
 
-import annexeWhiteLogo from '@/public/annexe-white.png';
+import zenithWhiteLogo from '@/public/zenith-white.png';
 import { teamHead } from '@/lib/data/team-members';
 
 function FooterSection() {
@@ -90,7 +90,7 @@ function FooterSection() {
                 <Divider className='bg-gray-500 my-3' />
 
                 <Link href={`mailto:${siteConfig.links.mail}`} className="mb-3 text-gray-300 dark:text-gray-400">{siteConfig.links.mail}</Link>
-                <Image className="max-w-36" radius='none' src={annexeWhiteLogo.src} alt="Annexe Logo" />
+                <Image className="max-w-36" radius='none' src={zenithWhiteLogo.src} alt="Zenith Logo" />
             </div>
         </div>
     )

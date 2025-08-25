@@ -12,6 +12,7 @@ export const title = tv({
 			pink: "from-[#FF72E1] to-[#F54C7A]",
 			foreground: "from-[#FFFFFF] to-[#4B4B4B]",
 			normal: "text-default-900 text-white dark:text-default-100 dark:text-white",
+			zenith: "from-[#052C87] to-[#5A6B91]",
 		},
 		size: {
 			xs: "text-lg lg:text-xl",

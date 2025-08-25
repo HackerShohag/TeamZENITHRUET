@@ -2,19 +2,19 @@ import { TeamMemberInfoProps } from "@/types/member";
 
 export const teamHead: TeamMemberInfoProps[] = [
   {
-    name: "Md Zahid Sarker",
+    name: "Md. Kawser Ahmed Ithun",
     designation: "Team Captain",
     avatarSrc: "/team23-24/1.png",
-    email: "mdzahidsarker27@gmail.com",
+    email: "kawserahmed1687@gmail.com",
     facebook: "https://www.facebook.com/zahid1902163",
     linkedin: "https://www.linkedin.com/in/md-zahid-sarker/",
     website: "https://mdzahidsarker.github.io/portfolio/"
   },
   {
-    name: "Md Shayan Elias Rahib",
+    name: "Utsho Saha",
     designation: "Team Manager",
     avatarSrc: "/team23-24/2.png",
-    email: "rahibelias@gmail.com",
+    email: "utshosaha006@gmail.com",
     facebook: "https://www.facebook.com/rahib.elias",
     linkedin: "https://www.linkedin.com/in/rahib-elias",
     website: ""

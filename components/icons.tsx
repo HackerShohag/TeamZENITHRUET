@@ -13,18 +13,18 @@ export const Logo: React.FC<IconSvgProps & { theme?: string }> = ({
 }) => (
 	<>
 		<Image
-			src={"/annexe-white.png"}
+			src={"/zenith-white.png"}
 			className={`hidden dark:block ${props.className}`}
 			height={size ?? height}
 			width={size ?? width}
-			alt="Team ANNEXE logo"
+			alt="Team ZENITH logo"
 		/>
 		<Image
-			src={"/annexe-black.png"}
+			src={"/zenith-black.png"}
 			className={`flex dark:hidden ${props.className}`}
 			height={size ?? height}
 			width={size ?? width}
-			alt="Team ANNEXE logo"
+			alt="Team ZENITH logo"
 		/>
 	</>
 );

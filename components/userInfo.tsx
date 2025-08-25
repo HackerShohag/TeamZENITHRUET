@@ -21,7 +21,7 @@ export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoP
                     }}
                     avatarProps={{
                         isBordered: true,
-                        color: "success",
+                        color: "secondary",
                         src: avatarSrc,
                         className: "w-40 h-40 text-large",
                     }}

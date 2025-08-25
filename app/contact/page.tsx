@@ -4,8 +4,8 @@ import { title } from "@/components/primitives";
 export default function ContactPage() {
 	return (
 		<div className="flex flex-col w-full mb-10">
-			<h1 className={title()}>Contact Us</h1>
-			<div className="border-green-500 border-l-2 pl-2 mt-3">Get in touch with team</div>
+			<h1 className={title({color:'zenith'})}>Contact Us</h1>
+			<div className="border-indigo-700 border-l-2 pl-2 mt-3">Get in touch with team</div>
 
 			<div className="grid grid-col-1 sm:grid-cols-3 w-full mt-20">
 				<div className="flex flex-col gap-2 p-5 px-6 bg-gray-100 dark:bg-gray-900 rounded-lg">
@@ -20,7 +20,7 @@ export default function ContactPage() {
 							<div>RUET, Rajshahi - Dhaka Highway</div>
 							<div>Mobile: +880 1773 979259</div>
 							<div>E-mail:
-								<a href="mailto:contact@teamannexeruet.info" className="text-green-500" > contact@teamannexeruet.info</a>
+								<a href="mailto:contact@teamannexeruet.info" className="text-indigo-500" > contact@teamannexeruet.info</a>
 							</div>
 						</div>
 					</div>
