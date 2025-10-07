@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import AdvisorTable from "@/components/advisorTable";
-import { advisorMembers } from "@/lib/data/avisor-members";
+import { advisors } from "@/lib/data/avisors";
 
 
 export default function AdvisorPage() {
@@ -12,7 +12,7 @@ export default function AdvisorPage() {
 				</h1>
 			</div>
 			<div className="flex my-10">
-				<AdvisorTable advisorMembers={advisorMembers} />
+				<AdvisorTable advisors={advisors} />
 			</div>
 		</div>
 	);

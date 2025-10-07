@@ -17,8 +17,8 @@ export const siteConfig = {
 			href: "/team",
 		},
 		{
-			label: "Advisor",
-			href: "/advisor",
+			label: "Aknowledgements",
+			href: "/aknowledgements",
 		},
 		// {
 		// 	label: "Alumni",
@@ -43,8 +43,8 @@ export const siteConfig = {
 			href: "/team",
 		},
 		{
-			label: "Advisor",
-			href: "/advisor",
+			label: "Aknowledgements",
+			href: "/aknowledgements",
 		},
 		// {
 		// 	label: "Alumni",

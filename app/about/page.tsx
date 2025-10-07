@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center text-lg py-15 text-justify">
-        <div className="flex items-center justify-center flex-col md:flex-row">
+        <div className="flex items-center justify-center flex-col md:flex-row object-cover overflow-hidden">
           <div className="flex flex-col max-w-3xl pr-5 p-3">
             {aboutData.history.map((item, idx) => (
               <p key={idx} className={idx === 1 ? "py-2" : ""}>
@@ -38,8 +38,8 @@ export default function AboutPage() {
               </p>
             ))}
           </div>
-          <div className="flex flex-col p-2">
-            <Image radius="none" src={aboutData.images[0].src} alt={aboutData.images[0].alt} width={1000} />
+          <div className="flex flex-col p-2 object-cover">
+            <Image className="w-full object-cover" radius="none" src={aboutData.images[0].src} alt={aboutData.images[0].alt} width={900} />
             <h6 className="text-center text-lg font-bold pt-2">{aboutData.images[0].caption}</h6>
           </div>
         </div>
@@ -47,22 +47,22 @@ export default function AboutPage() {
           <div className="flex flex-col">
             <Image
               radius="none"
-              className="h-full sm:h-96"
+              className="h-full w-full sm:h-96"
               src={aboutData.images[1].src}
               alt={aboutData.images[1].alt}
-              width={1000}
+              sizes="220px"
             />
             <h6 className="text-center text-lg font-bold pt-2">{aboutData.images[1].caption}</h6>
           </div>
           <div className="flex flex-col">
-            <Image
+            {/* <Image
               radius="none"
               className="h-full sm:h-96"
               src={aboutData.images[2].src}
               alt={aboutData.images[2].alt}
               width={1000}
-            />
-            <h6 className="text-center text-lg font-bold pt-2">{aboutData.images[2].caption}</h6>
+            /> */}
+            {/* <h6 className="text-center text-lg font-bold pt-2">{aboutData.images[2].caption}</h6> */}
           </div>
         </div>
       </div>

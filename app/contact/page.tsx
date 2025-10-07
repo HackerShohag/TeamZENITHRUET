@@ -20,7 +20,7 @@ export default function ContactPage() {
 							<div>RUET, Rajshahi - Dhaka Highway</div>
 							<div>Mobile: +880 1773 979259</div>
 							<div>E-mail:
-								<a href="mailto:contact@teamannexeruet.info" className="text-indigo-500" > contact@teamannexeruet.info</a>
+								<a href="mailto:contact@teamzenithruet.info" className="text-indigo-500" > contact@teamzenithruet.info</a>
 							</div>
 						</div>
 					</div>

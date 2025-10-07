@@ -1,26 +1,21 @@
 import React from 'react';
-import TeamMemberInfo from '@/components/userInfo';
-import { TeamMemberInfoProps } from '@/types/member';
+import { AdvisorInfoProps, TeamMemberInfoProps } from '@/types/member';
+import IntroCard from '@/components/intoCard';
 
 interface MemberTableProps {
-    teamMembers: TeamMemberInfoProps[];
-    teamHead?: TeamMemberInfoProps[];
+    teamMembers: TeamMemberInfoProps[] | AdvisorInfoProps[];
 }
 
-export default function MemberTable({ teamMembers, teamHead }: MemberTableProps) {
+export default function MemberTable({ teamMembers }: MemberTableProps) {
+    if (!teamMembers?.length) return null;
 
     return (
-        <div className="block">
-            <div className='grid grid-cols-1 sm:grid-cols-2 justify-center'>
-                {teamHead && teamHead.map((member, index) => (
-                    <TeamMemberInfo key={index} userInfo={member} />
-                ))}
+        <div className="grid w-full items-start justify-evenly gap-x-4 gap-y-8 py-4 grid-cols-[repeat(auto-fill,minmax(320px,2fr))]">
+            {teamMembers.map((member, idx) => (
+            <div key={(member as any).id ?? idx} className="h-full">
+                <IntroCard person={member} />
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-30 mt-10'>
-                {teamMembers.map((member, index) => (
-                    <TeamMemberInfo key={index} userInfo={member} />
-                ))}
-            </div>
+            ))}
         </div>
-    )
+    );
 }

@@ -6,11 +6,11 @@ export const aboutData = {
   tagline:
     "We build the future.",
   description:
-    "We are a passionate and ambitious student team at RUET (Rajshahi University of Engineering & Technology), specializing in automotive projects including Formula Student Go Kart and NASA Human Rover challenges. With dedication and creativity at their core, they tirelessly pursue their dreams, pushing the boundaries of innovation in engineering. Through teamwork and perseverance, Team Zenith strives to make a mark in the world of automotive design and competition, embodying the spirit of determination and ingenuity.",
+    "Team Zenith RUET is a student-led engineering team dedicated to advancing robotics and space exploration through innovation, research, and practical application. \nFormed in 2023 by a group of talented and passionate engineering students from RUET, Team Zenith is dedicated to designing and developing advanced robotic systems and competing in prestigious engineering contests worldwide.",
   history: [
     {
       text:
-        "At TEAM ZENITH RUET, we are a group of passionate innovators, engineers, and problem-solvers dedicated to pushing the boundaries of robotics and technology. Our mission is to design, build, and program advanced robots that not only compete but also inspire the next generation of thinkers and creators. Founded in 2023, our team brings together students, mentors, and industry professionals with diverse skills, from mechanical engineering and programming to design and strategy. Through collaboration, innovation, and hard work, we aim to tackle complex challenges and continually improve our creations. We believe robotics is more than just competition. It's about learning, growing, and building a better future through science, technology, engineering, and math (STEM). Together, we're shaping the future—one robot at a time.",
+        "Team Zenith develops a variety of innovative projects, including advanced line-following robots, soccer bots, and automated railway line-changing systems. The team has actively participated in several prestigious competitions, showcasing these robots and earning acknowledgment for their technical expertise and creativity. Most notably, Team Zenith competed in the IRDC Mars Rover Competition 2024, where its rover design and performance received significant recognition. \nThrough these initiatives, Team Zenith has not only strengthened its technical capabilities in robotics, automation, and system design but also fostered interdisciplinary collaboration, problem-solving, and leadership skills. Representing RUET’s culture of innovation and excellence, the team continues to push the boundaries of engineering and technology, inspiring future generations and showcasing Bangladesh’s talent on international platforms.",
     },
     // {
     //   text:
@@ -19,19 +19,14 @@ export const aboutData = {
   ],
   images: [
     {
-      src: "/gallery/fkdc5.jpg",
-      alt: "FKDC5",
-      caption: "Formula Kart Design Challenge S7",
+      src: "/gallery/grinding.jpg",
+      alt: "Grinding the chassis",
+      caption: "Grinding the chassis",
     },
     {
-      src: "/gallery/chegRepublic1.jpg",
-      alt: "Formula Student Czech Republic 2020",
-      caption: "Formula Student Czech Republic 2020",
-    },
-    {
-      src: "/gallery/nasa5.jpg",
-      alt: "NASA Human Rover Challenge",
-      caption: "NASA Human Rover Challenge",
+      src: "/gallery/members-24-25.jpg",
+      alt: "Team Zenith, Full Team",
+      caption: "Team Members",
     },
   ],
   logos: {

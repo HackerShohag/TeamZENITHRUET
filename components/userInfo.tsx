@@ -2,9 +2,9 @@ import React from 'react'
 import { Link, User } from '@nextui-org/react'
 import NextLink from "next/link";
 import { FaEnvelope, FaFacebook, FaGlobe, FaLinkedin } from 'react-icons/fa'
-import { TeamMemberInfoProps } from '@/types/member';
+import { AdvisorInfoProps, TeamMemberInfoProps } from '@/types/member';
 
-export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoProps | undefined }) {
+export default function TeamMemberInfo({ userInfo }: { userInfo: TeamMemberInfoProps | AdvisorInfoProps }) {
     const { name, designation, avatarSrc, email, linkedin, facebook, website } = userInfo || {};
 
     return (
