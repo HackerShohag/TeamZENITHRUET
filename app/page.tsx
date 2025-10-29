@@ -8,23 +8,15 @@ import zenithDarkLogo from '@/public/zenith-black.png';
 import zenithWhiteLogo from '@/public/zenith-white.png';
 
 const images = [
-	'/gallery/nasa1.jpg',
-	'/gallery/fkdc1.jpg',
-	'/gallery/chegRepublic1.jpg',
-	'/gallery/nasa2.jpg',
-	'/gallery/chegRepublic2.jpg',
-	'/gallery/recruitment1.jpg',
-	'/gallery/fkdc2.jpg',
-	'/gallery/fkdc3.jpg',
-	'/gallery/nasa3.jpg',
-	'/gallery/seminar2.jpg',
-	'/gallery/nasa6.jpg',
-	'/gallery/chegRepublic3.jpg',
-	'/gallery/fkdc4.jpg',
-	'/gallery/nasa4.jpg',
-	'/gallery/seminar1.jpg',
-	'/gallery/nasa5.jpg',
-	'/gallery/fkdc5.jpg',
+	'/gallery/grinding.jpg',
+	'/gallery/members-24-25.jpg',
+	'/gallery/grinding.jpg',
+	'/gallery/cuet1.jpg',
+	'/gallery/brac.jpg',
+	'/gallery/cuet2.jpg',
+	'/gallery/cuet5.jpg',
+	'/gallery/members-24-25.jpg',
+
 ];
 
 export default function Home() {
