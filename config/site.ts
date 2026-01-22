@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Team ZENITH RUET",
+	name: "Team ZENITH RUET" ,
 	description: "Our team consists of young, experienced and intellectual individuals who have the experience of work.",
 	navItems: [
 		{
