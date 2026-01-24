@@ -46,7 +46,7 @@ export default function IntroCard({ person }: Props) {
                         <span
                             className="
                                 mt-1 inline-block text-[11px] font-medium px-3 py-1 rounded-full
-                                bg-gradient-to-r from-rose-500 to-rose-500 text-white
+                                bg-gradient-to-r from-[#EB5443] to-[#EB5443] text-white
                                 shadow-sm
                             "
                         >

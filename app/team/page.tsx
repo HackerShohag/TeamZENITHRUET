@@ -19,7 +19,7 @@ export default function ProjectsPage() {
 			{/* Advisors */}
 			<div className="flex w-full flex-col items-center justify-center">
 				<div className="flex max-w-xl text-center justify-center font-bold">
-					<h1 className={title({ color: "pink", className: "font-black" })}>
+					<h1 className={title({ color: "zenith", className: "font-black" })}>
 						OUR ADVISORS&nbsp;
 					</h1>
 				</div>
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
 			{/* System Architects */}
 			<div className="flex w-full flex-col items-center justify-center">
 				<div className="flex max-w-xl text-center justify-center font-bold">
-					<h1 className={title({ color: "pink", className: "font-black" })}>
+					<h1 className={title({ color: "zenith", className: "font-black" })}>
 						SYSTEM ARCHITECTS&nbsp;
 					</h1>
 				</div>
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
 			<div className="flex w-full flex-col items-center justify-center">
 				<div className="flex w-full max-w-lg text-center justify-center font-bold">
 					{/* <h1 className={title({ className: "font-black" })}>MEET&nbsp;</h1> */}
-					<h1 className={title({ color: "pink", className: "font-black" })}>
+					<h1 className={title({ color: "zenith", className: "font-black" })}>
 						OUR TEAM
 					</h1>
 					{/* <h1 className={title({ className: "font-black" })}>TEAM</h1> */}

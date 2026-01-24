@@ -111,7 +111,7 @@ function ContactForm() {
         value={formData.message}
         onChange={handleMessageChange}
       />
-      <Button startContent={<BsSendFill />} className="bg-rose-500 text-white p-2 rounded-md" type="submit">Send</Button>
+      <Button startContent={<BsSendFill />} className="bg-[#E34333] text-white p-2 rounded-md" type="submit">Send</Button>
     </form>
   )
 }
