@@ -8,10 +8,20 @@ import { Image } from "@nextui-org/image";
 
 import zenithWhiteLogo from '@/public/zenith-white.png';
 import { teamHead } from '@/lib/data/team-members';
+import mars_cover from '@/public/gallery/mars-cover.jpg';
 
 function FooterSection() {
     return (
-        <div className="flex flex-col items-center w-full h-max justify-center bg-rose-950/80 dark:bg-rose-950/80 p-7">
+        <div 
+            className="flex flex-col items-center w-full h-max justify-center p-7 relative"
+            style={{ 
+            backgroundImage: `url(${mars_cover.src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+            }}
+        >
+            <div className="absolute inset-0 bg-black/70 dark:bg-black/80"></div>
+            <div className="relative z-10 flex flex-col items-center justify-center w-full">
             <div className="flex flex-col items-center justify-center">
                 <div className="flex justify-center gap-5 mb-3">
                     <Link isExternal href={siteConfig.links.facebook} aria-label="Twitter">
@@ -92,6 +102,7 @@ function FooterSection() {
                 <Link href={`mailto:${siteConfig.links.mail}`} className="mb-3 text-gray-300 dark:text-gray-400">{siteConfig.links.mail}</Link>
                 <Image className="max-w-36" radius='none' src={zenithWhiteLogo.src} alt="Zenith Logo" />
             </div>
+        </div>
         </div>
     )
 }

@@ -64,7 +64,7 @@ function AcknowledgementCard({ person }: { person: AcknowledgementProps }) {
               href={person.companyUrl || "#"}
               isExternal
               showAnchorIcon
-              className="text-sm font-medium text-rose-600 dark:text-rose-400"
+              className="text-sm font-medium text-red-600 dark:text-red-400"
             >
               {person.company}
             </Link>
@@ -74,7 +74,7 @@ function AcknowledgementCard({ person }: { person: AcknowledgementProps }) {
       <CardBody className="pt-4">
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <FaHeart className="text-rose-500" />
+            <FaHeart className="text-red-500" />
             <span className="font-semibold text-slate-700 dark:text-slate-300">
               {person.contribution}
             </span>
@@ -92,7 +92,7 @@ function AcknowledgementCard({ person }: { person: AcknowledgementProps }) {
             {person.email && (
               <Link
                 href={`mailto:${person.email}`}
-                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-slate-600 transition-colors"
+                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-red-50 dark:bg-slate-700 text-red-600 dark:text-red-300 hover:bg-red-100 dark:hover:bg-slate-600 transition-colors"
                 aria-label="Email"
               >
                 <FiMail />
@@ -102,7 +102,7 @@ function AcknowledgementCard({ person }: { person: AcknowledgementProps }) {
               <Link
                 href={person.linkedin}
                 isExternal
-                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-slate-600 transition-colors"
+                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-red-50 dark:bg-slate-700 text-red-600 dark:text-red-300 hover:bg-red-100 dark:hover:bg-slate-600 transition-colors"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
@@ -112,7 +112,7 @@ function AcknowledgementCard({ person }: { person: AcknowledgementProps }) {
               <Link
                 href={person.facebook}
                 isExternal
-                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-slate-600 transition-colors"
+                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-red-50 dark:bg-slate-700 text-red-600 dark:text-red-300 hover:bg-red-100 dark:hover:bg-slate-600 transition-colors"
                 aria-label="Facebook"
               >
                 <FaFacebookF />
@@ -122,7 +122,7 @@ function AcknowledgementCard({ person }: { person: AcknowledgementProps }) {
               <Link
                 href={person.website}
                 isExternal
-                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-slate-600 transition-colors"
+                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-red-50 dark:bg-slate-700 text-red-600 dark:text-red-300 hover:bg-red-100 dark:hover:bg-slate-600 transition-colors"
                 aria-label="Website"
               >
                 <FiGlobe />
@@ -149,7 +149,7 @@ function AcknowledgementSection({
   return (
     <div className="flex w-full flex-col items-center justify-center my-10">
       <div className="flex max-w-xl text-center justify-center font-bold mb-8">
-        <h2 className={title({ size: "sm", color: "pink", className: "font-black" })}>
+        <h2 className={title({ size: "sm", color: "zenith", className: "font-black" })}>
           {sectionTitle}
         </h2>
       </div>
@@ -173,7 +173,7 @@ export default function AcknowledgementsPage() {
     <div className="flex flex-col w-full items-center justify-center">
       {/* Header */}
       <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className={title({ color: "pink", className: "font-black" })}>
+        <h1 className={title({ color: "zenith", className: "font-black" })}>
           {acknowledgementData.title}
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 mt-2">
@@ -185,12 +185,12 @@ export default function AcknowledgementsPage() {
       </div>
 
       {/* Special Thanks Banner */}
-      <div className="w-full max-w-4xl bg-gradient-to-r from-rose-500 to-pink-500 rounded-2xl p-6 mb-10 shadow-lg">
+      <div className="w-full max-w-4xl bg-gradient-to-r from-[#EB5443] to-[#A41C14] rounded-2xl p-6 mb-10 shadow-lg">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-white">
           <FaHeart className="text-4xl animate-pulse" />
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold">Thank You for Your Support!</h3>
-            <p className="text-rose-100">
+            <p className="text-red-100">
               Every contribution, big or small, helps us achieve our mission.
             </p>
           </div>
@@ -229,7 +229,7 @@ export default function AcknowledgementsPage() {
         </p>
         <Link
           href="/contact"
-          className="px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-full hover:from-rose-600 hover:to-pink-600 transition-all shadow-md hover:shadow-lg"
+          className="px-6 py-3 bg-[#E34333] text-white font-semibold rounded-full hover:bg-[#c9392b] transition-all shadow-md hover:shadow-lg"
         >
           Get in Touch
         </Link>
