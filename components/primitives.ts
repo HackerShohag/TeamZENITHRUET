@@ -9,10 +9,10 @@ export const title = tv({
 			blue: "from-[#5EA2EF] to-[#0072F5]",
 			cyan: "from-[#00b7fa] to-[#01cfea]",
 			green: "from-[#6FEE8D] to-[#17c964]",
-			pink: "from-[#FF72E1] to-[#F54C7A]",
+			pink: "from-[#EB5443] to-[#F54C7A]",
 			foreground: "from-[#FFFFFF] to-[#4B4B4B]",
 			normal: "text-default-900 text-white dark:text-default-100 dark:text-white",
-			zenith: "from-[#052C87] to-[#5A6B91]",
+			zenith: "from-[#EB5443] to-[#A41C14]",
 		},
 		size: {
 			xs: "text-lg lg:text-xl",

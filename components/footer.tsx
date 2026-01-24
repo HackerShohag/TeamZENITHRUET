@@ -11,7 +11,7 @@ import { teamHead } from '@/lib/data/team-members';
 
 function FooterSection() {
     return (
-        <div className="flex flex-col items-center w-full h-max justify-center bg-gray-600 dark:bg-gray-900 p-7">
+        <div className="flex flex-col items-center w-full h-max justify-center bg-rose-950/80 dark:bg-rose-950/80 p-7">
             <div className="flex flex-col items-center justify-center">
                 <div className="flex justify-center gap-5 mb-3">
                     <Link isExternal href={siteConfig.links.facebook} aria-label="Twitter">
@@ -47,13 +47,13 @@ function FooterSection() {
                     >
                         Team
                     </NextLink>
-                    <NextLink
+                    {/* <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/advisor"
                         aria-label='Advisor Page'
                     >
                         Advisors
-                    </NextLink>
+                    </NextLink> */}
                     <NextLink
                         className='text-gray-300 dark:text-gray-400 hover:text-slate-100 hover:font-bold transition-colors duration-200'
                         href="/contact"

@@ -31,7 +31,7 @@ export default function Home() {
 				<div className="flex flex-col w-full">
 					<div className="flex flex-row justify-between items-center">
 						<div className="">
-							<h1 className={title({ size: 'lg', class: "font-black" })}>
+							<h1 className={title({ size: 'lg', class: "font-black", color: "pink"})}>
 								Team ZENITH RUET
 							</h1>
 							<br />
@@ -46,7 +46,7 @@ export default function Home() {
 
 			</div>
 			<div className="flex w-full gap-3">
-				<Link isExternal href="/" className={buttonStyles({ class: "rounded text-white font-bold", color: "secondary", radius: "full", variant: "shadow", size: 'lg' })}>Join the team</Link>
+				<Link isExternal href="/" className={buttonStyles({ class: "rounded text-white font-bold", color: "danger", radius: "full", variant: "shadow", size: 'lg' })}>Join the team</Link>
 				{/* <Link isExternal href="/" className={buttonStyles({ class: "rounded", variant: "bordered", radius: "full" })}>{props.buttons?.at(1)?.label}</Link> */}
 			</div>
 

@@ -46,7 +46,7 @@ export default function IntroCard({ person }: Props) {
                         <span
                             className="
                                 mt-1 inline-block text-[11px] font-medium px-3 py-1 rounded-full
-                                bg-gradient-to-r from-teal-500 to-cyan-500 text-white
+                                bg-gradient-to-r from-rose-500 to-rose-500 text-white
                                 shadow-sm
                             "
                         >
@@ -65,11 +65,11 @@ export default function IntroCard({ person }: Props) {
                             href={`mailto:${email}`}
                             className="
                                 flex items-center gap-2 text-slate-600 dark:text-slate-300
-                                hover:text-teal-600 dark:hover:text-teal-400 transition-colors
+                                hover:text-rose-600 dark:hover:text-rose-400 transition-colors
                             "
                             aria-label="Email"
                         >
-                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-teal-50 dark:bg-slate-700 text-teal-600 dark:text-teal-300">
+                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300">
                                 <FiMail />
                             </span>
                         </a>
@@ -82,11 +82,11 @@ export default function IntroCard({ person }: Props) {
                             rel="noopener noreferrer"
                             className="
                                     flex items-center gap-2 text-slate-600 dark:text-slate-300
-                                    hover:text-teal-600 dark:hover:text-teal-400 transition-colors
+                                    hover:text-rose-600 dark:hover:text-rose-400 transition-colors
                                 "
                             aria-label="LinkedIn"
                         >
-                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-teal-50 dark:bg-slate-700 text-teal-600 dark:text-teal-300">
+                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300">
                                 <FaLinkedinIn />
                             </span>
                         </a>
@@ -98,11 +98,11 @@ export default function IntroCard({ person }: Props) {
                             rel="noopener noreferrer"
                             className="
                                 flex items-center gap-2 text-slate-600 dark:text-slate-300
-                                hover:text-teal-600 dark:hover:text-teal-400 transition-colors
+                                hover:text-rose-600 dark:hover:text-rose-400 transition-colors
                             "
                             aria-label="Facebook"
                         >
-                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-teal-50 dark:bg-slate-700 text-teal-600 dark:text-teal-300">
+                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300">
                                 <FaFacebookF />
                             </span>
                         </a>
@@ -115,11 +115,11 @@ export default function IntroCard({ person }: Props) {
                             rel="noopener noreferrer"
                             className="
                                 flex items-center gap-2 text-slate-600 dark:text-slate-300
-                                hover:text-teal-600 dark:hover:text-teal-400 transition-colors
+                                hover:text-rose-600 dark:hover:text-rose-400 transition-colors
                             "
                             aria-label="Website"
                         >
-                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-teal-50 dark:bg-slate-700 text-teal-600 dark:text-teal-300">
+                            <span className="w-8 h-8 inline-flex items-center justify-center rounded-full bg-rose-50 dark:bg-slate-700 text-rose-600 dark:text-rose-300">
                                 <FiGlobe />
                             </span>
                         </a>
