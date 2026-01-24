@@ -1,6 +1,7 @@
 import { Image } from "@nextui-org/image";
 import { title } from "@/components/primitives";
 import { aboutData } from "@/lib/data/about";
+import rover from '@/public/gallery/rover-rendered.png';
 
 export default function AboutPage() {
   return (
@@ -11,19 +12,19 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 max-w-6xl my-10">
         <div className="flex w-full rounded-md items-center justify-center">
           <Image
-            classNames={{ wrapper: "hidden dark:flex" }}
-            className="hidden dark:flex w-auto"
+            classNames={{ wrapper: "flex" }}
+            className="flex w-auto"
             width={700}
-            src={aboutData.logos.dark}
-            alt="Annexe Logo"
+            src={rover.src}
+            alt="Zenith Rover Rendered"
           />
-          <Image
+          {/* <Image
             classNames={{ wrapper: "dark:hidden" }}
             className="dark:hidden w-auto"
             width={700}
             src={aboutData.logos.light}
             alt="Annexe Logo"
-          />
+          /> */}
         </div>
         <div>
           <h2 className="text-lg py-5 text-justify mx-5">{aboutData.description}</h2>
@@ -39,14 +40,13 @@ export default function AboutPage() {
             ))}
           </div>
           <div className="flex flex-col p-2 object-cover">
-            <Image className="w-full object-cover" radius="none" src={aboutData.images[0].src} alt={aboutData.images[0].alt} width={900} />
+            <Image className="w-full object-cover" src={aboutData.images[0].src} alt={aboutData.images[0].alt} width={900} />
             <h6 className="text-center text-lg font-bold pt-2">{aboutData.images[0].caption}</h6>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-10 p-2">
           <div className="flex flex-col">
             <Image
-              radius="none"
               className="h-full w-full sm:h-96"
               src={aboutData.images[1].src}
               alt={aboutData.images[1].alt}

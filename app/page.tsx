@@ -6,6 +6,7 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import SlideCard from "@/components/slideCard";
 import zenithDarkLogo from '@/public/zenith-black.png';
 import zenithWhiteLogo from '@/public/zenith-white.png';
+import rover from '@/public/gallery/rover-rendered.png';
 
 const images = [
 	'/gallery/grinding.jpg',
