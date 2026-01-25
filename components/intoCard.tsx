@@ -24,7 +24,7 @@ export default function IntroCard({ person }: Props) {
     return (
         <article
             className="
-                flex gap-3 items-start max-w-sm rounded-2xl"
+                flex gap-3 items-start max-w-sm rounded-2xl card-hover transition-all duration-300"
         >
             <div className="relative w-2/6 flex-shrink-0 self-stretch rounded-b-full overflow-hidden">
                 <Image

@@ -1,9 +1,15 @@
+import { socialLinks, contactInfo, teamStats } from "@/lib/data/stats";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
 	name: "Team ZENITH RUET",
-	description: "Our team consists of young, experienced and intellectual individuals who have the experience of work.",
+	description: "A student-led engineering team at RUET dedicated to advancing robotics and space exploration through innovation, research, and practical application.",
 	navItems: [
+		{
+			label: "Home",
+			href: "/",
+		},
 		{
 			label: "About",
 			href: "/about",
@@ -17,20 +23,20 @@ export const siteConfig = {
 			href: "/team",
 		},
 		{
-			label: "Aknowledgements",
+			label: "Acknowledgements",
 			href: "/aknowledgements",
 		},
-		// {
-		// 	label: "Alumni",
-		// 	href: "/alumni",
-		// },
 		{
-			label: "Contact Us",
+			label: "Contact",
 			href: "/contact",
 		}
 	],
 	navMenuItems: [
 		{
+			label: "Home",
+			href: "/",
+		},
+		{
 			label: "About",
 			href: "/about",
 		},
@@ -43,23 +49,20 @@ export const siteConfig = {
 			href: "/team",
 		},
 		{
-			label: "Aknowledgements",
+			label: "Acknowledgements",
 			href: "/aknowledgements",
 		},
-		// {
-		// 	label: "Alumni",
-		// 	href: "/alumni",
-		// },
 		{
-			label: "Contact Us",
+			label: "Contact",
 			href: "/contact",
 		}
 	],
 	links: {
-		linkedIn: "https://www.linkedin.com/company/team-zenith-ruet/",
-		github: "https://github.com/Team-Zenith-RUET",
-		facebook: "https://www.facebook.com/teamzenithruet",
-		mail: "contact@teamzenithruet.info",
+		linkedIn: socialLinks.linkedin,
+		github: socialLinks.github,
+		facebook: socialLinks.facebook,
+		mail: contactInfo.email,
 		docs: '',
+		joinForm: teamStats.joinFormUrl,
 	},
 };
