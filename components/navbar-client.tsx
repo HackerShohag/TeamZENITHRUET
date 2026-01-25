@@ -6,6 +6,7 @@ import {
     Navbar as NextUINavbar,
     NavbarMenu,
     NavbarMenuItem,
+    NavbarItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
@@ -16,6 +17,31 @@ import clsx from "clsx";
 
 export interface NavbarClientProps {
     children: ReactNode;
+}
+
+// Client component for nav links with active state
+export function NavLinks() {
+    const pathname = usePathname();
+    
+    return (
+        <ul className="hidden lg:flex gap-1 justify-start ml-4">
+            {siteConfig.navItems.map((item) => (
+                <NavbarItem key={item.href}>
+                    <NextLink
+                        className={clsx(
+                            "px-4 py-2 rounded-full text-sm font-medium transition-all duration-200",
+                            pathname === item.href
+                                ? "bg-gradient-to-r from-[#E34333] to-[#A41C14] text-white"
+                                : "text-slate-700 dark:text-slate-300 hover:text-[#E34333] dark:hover:text-[#E34333] hover:bg-red-50 dark:hover:bg-slate-800"
+                        )}
+                        href={item.href}
+                    >
+                        {item.label}
+                    </NextLink>
+                </NavbarItem>
+            ))}
+        </ul>
+    );
 }
 
 export function NavbarClient({ children }: NavbarClientProps) {
