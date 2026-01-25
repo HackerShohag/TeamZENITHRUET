@@ -17,11 +17,11 @@ export const aboutData = {
 
   // Team Sub-divisions
   teams: {
-    design: {
-      name: "Design Team",
-      description: "Responsible for CAD modeling, 3D design, and visual prototyping of all robotic systems. The team uses advanced software like SolidWorks and Fusion 360 to create detailed designs before manufacturing.",
-      icon: "🎨",
-      highlights: ["CAD Modeling", "3D Printing", "Prototyping", "Visual Design"]
+    business: {
+      name: "Business Team",
+      description: "Handles sponsorship acquisition, marketing, public relations, and team management. They build partnerships, manage social media presence, and ensure the team has the resources needed to succeed.",
+      icon: "💼",
+      highlights: ["Sponsorship", "Marketing", "Public Relations", "Team Management"]
     },
     electrical: {
       name: "Electrical Team",
@@ -31,9 +31,9 @@ export const aboutData = {
     },
     mechanical: {
       name: "Mechanical Team",
-      description: "Focuses on the physical construction, chassis design, and mechanical systems of our robots. They handle material selection, manufacturing, and assembly of all mechanical components.",
+      description: "Focuses on the physical construction, chassis design, CAD modeling, 3D design, and mechanical systems of our robots. They handle material selection, manufacturing, prototyping, and assembly of all mechanical components using tools like SolidWorks and Fusion 360.",
       icon: "⚙️",
-      highlights: ["Chassis Design", "Manufacturing", "Assembly", "Material Selection"]
+      highlights: ["Chassis Design", "CAD Modeling", "3D Printing", "Manufacturing", "Assembly", "Prototyping"]
     },
     control: {
       name: "Control Team",

@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 import { title } from "@/components/primitives";
 import { aboutData } from "@/lib/data/about";
 import rover from '@/public/gallery/rover-rendered.png';
-import { FaRocket, FaCog, FaBolt, FaGamepad, FaFlask, FaPalette, FaEye, FaBullseye } from "react-icons/fa";
+import { FaRocket, FaCog, FaBolt, FaGamepad, FaFlask, FaBriefcase, FaEye, FaBullseye } from "react-icons/fa";
 import { MdTimeline } from "react-icons/md";
 
 const teamIcons: Record<string, React.ReactNode> = {
-  design: <FaPalette className="text-2xl" />,
+  business: <FaBriefcase className="text-2xl" />,
   electrical: <FaBolt className="text-2xl" />,
   mechanical: <FaCog className="text-2xl" />,
   control: <FaGamepad className="text-2xl" />,

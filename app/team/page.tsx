@@ -50,10 +50,10 @@ export default function TeamPage() {
 				className="w-full mb-16"
 			>
 				<div className="text-center mb-8">
-					<div className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-[#E34333]/10 to-[#A41C14]/10 rounded-full mb-4">
+					<div className="inline-flex items-center gap-2 px-6 py-2 bg-white dark:bg-slate-800 rounded-full shadow-md mb-4">
 						<span className="text-2xl">🎓</span>
-						<h2 className={title({ size: "sm", color: "zenith", className: "font-black" })}>
-							OUR ADVISORS
+						<h2 className={title({ size: "xs", className: "font-black text-slate-800 dark:text-white" })}>
+							Our Advisors
 						</h2>
 					</div>
 				</div>
@@ -69,10 +69,10 @@ export default function TeamPage() {
 				className="w-full mb-16"
 			>
 				<div className="text-center mb-8">
-					<div className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-[#E34333]/10 to-[#A41C14]/10 rounded-full mb-4">
+					<div className="inline-flex items-center gap-2 px-6 py-2 bg-white dark:bg-slate-800 rounded-full shadow-md mb-4">
 						<span className="text-2xl">🏗️</span>
-						<h2 className={title({ size: "sm", color: "zenith", className: "font-black" })}>
-							SYSTEM ARCHITECTS
+						<h2 className={title({ size: "xs", className: "font-black text-slate-800 dark:text-white" })}>
+							System Architects
 						</h2>
 					</div>
 				</div>
@@ -88,10 +88,10 @@ export default function TeamPage() {
 				className="w-full mb-16"
 			>
 				<div className="text-center mb-8">
-					<div className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-[#E34333]/10 to-[#A41C14]/10 rounded-full mb-4">
+					<div className="inline-flex items-center gap-2 px-6 py-2 bg-white dark:bg-slate-800 rounded-full shadow-md mb-4">
 						<span className="text-2xl">👥</span>
-						<h2 className={title({ size: "sm", color: "zenith", className: "font-black" })}>
-							TEAM LEADERSHIP
+						<h2 className={title({ size: "xs", className: "font-black text-slate-800 dark:text-white" })}>
+							Team Leadership
 						</h2>
 					</div>
 				</div>

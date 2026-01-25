@@ -63,11 +63,11 @@ function FooterSection() {
                         {/* Quick Links */}
                         <div>
                             <h3 className="text-white font-bold mb-4">Quick Links</h3>
-                            <ul className="space-y-2">
+                            <ul className="flex flex-wrap gap-2 md:flex-col md:space-y-2 md:gap-0">
                                 {siteConfig.navItems.map((item) => (
                                     <li key={item.href}>
                                         <NextLink
-                                            className="text-gray-400 hover:text-[#E34333] transition-colors text-sm"
+                                            className="inline-block px-3 py-1.5 md:px-0 md:py-0 rounded-full md:rounded-none bg-white/10 md:bg-transparent text-gray-300 hover:bg-[#E34333] hover:text-white md:hover:bg-transparent md:hover:text-[#E34333] transition-all text-sm"
                                             href={item.href}
                                         >
                                             {item.label}

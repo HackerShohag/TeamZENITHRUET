@@ -19,7 +19,7 @@ import { sponsors } from "./acknowledgements";
 
 export const teamStats = {
   // Founding year
-  foundedYear: 2025,
+  foundedYear: 2023,
   
   // This will be calculated automatically from team-members.ts
   get totalMembers() {
@@ -80,7 +80,7 @@ export const socialLinks = {
   github: "https://github.com/TeamZENITHRUET",
   instagram: "https://instagram.com/teamzenithruet",
   youtube: "https://youtube.com/@teamzenithruet",
-  email: "teamzenith.ruet@gmail.com",
+  email: "contact@teamzenithruet.info",
 };
 
 // ============================================
@@ -88,8 +88,8 @@ export const socialLinks = {
 // ============================================
 
 export const contactInfo = {
-  email: "teamzenith.ruet@gmail.com",
-  phone: "+880 1XXX-XXXXXX", // Update with actual phone
+  email: "contact@teamzenithruet.info",
+  phone: "+880 1980-827568", // Update with actual phone
   address: "Rajshahi University of Engineering & Technology (RUET), Rajshahi-6204, Bangladesh",
   university: "Rajshahi University of Engineering & Technology",
   universityShort: "RUET",
