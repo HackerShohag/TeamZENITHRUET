@@ -7,6 +7,7 @@ import { Input, Textarea } from "@nextui-org/input";
 import { RadioGroup, Radio } from "@nextui-org/radio";
 import { motion } from "framer-motion";
 import { FaHeart, FaHandshake, FaGraduationCap, FaBuilding } from "react-icons/fa";
+import { ToastContainer, ToastState } from "@/components/ui/Toast";
 
 // Google Sheets Web App URL
 const GOOGLE_SHEETS_SUPPORT_URL = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_SUPPORT_URL || "";
@@ -30,6 +31,7 @@ export default function SupportPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [toast, setToast] = useState<ToastState | null>(null);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -45,37 +47,83 @@ export default function SupportPage() {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
+  const showToast = (message: string, type: 'success' | 'error') => {
+    setToast({ message, type });
+    setTimeout(() => setToast(null), 5000);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError("");
 
+    // Validate required fields
+    if (!formData.name || !formData.email || !formData.supportType || !formData.message) {
+      setError("Please fill in all required fields.");
+      showToast("Please fill in all required fields.", "error");
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Check if URL is configured
+    if (!GOOGLE_SHEETS_SUPPORT_URL) {
+      setError("Form submission is not configured. Please contact the administrator.");
+      showToast("Form not configured. Please contact admin.", "error");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      await fetch(GOOGLE_SHEETS_SUPPORT_URL, {
+      // Create form data for URL-encoded submission (works better with Google Apps Script)
+      const formBody = new URLSearchParams();
+      formBody.append('data', JSON.stringify({
+        ...formData,
+        type: "support",
+        timestamp: new Date().toISOString(),
+      }));
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+
+      const response = await fetch(GOOGLE_SHEETS_SUPPORT_URL, {
         method: "POST",
-        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify({
-          ...formData,
-          type: "support",
-          timestamp: new Date().toISOString(),
-        }),
+        body: formBody.toString(),
+        signal: controller.signal,
       });
 
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        organization: "",
-        supportType: "",
-        message: "",
-        website: "",
-      });
-    } catch (err) {
-      setError("Something went wrong. Please try again.");
+      clearTimeout(timeoutId);
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        showToast("Thank you! Your support request has been submitted. 💖", "success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          organization: "",
+          supportType: "",
+          message: "",
+          website: "",
+        });
+      } else {
+        throw new Error(`Server responded with status: ${response.status}`);
+      }
+    } catch (err: any) {
+      console.error("Submission error:", err);
+      
+      let errorMessage = "Failed to submit. Please try again.";
+      
+      if (err.name === 'AbortError') {
+        errorMessage = "Request timed out. Please check your connection and try again.";
+      } else if (err.message?.includes('Failed to fetch') || err.message?.includes('NetworkError')) {
+        errorMessage = "Network error. Please check your internet connection.";
+      }
+      
+      setError(errorMessage);
+      showToast(errorMessage, "error");
     } finally {
       setIsSubmitting(false);
     }
@@ -83,6 +131,9 @@ export default function SupportPage() {
 
   return (
     <div className="min-h-screen">
+      {/* Toast Notification */}
+      <ToastContainer toast={toast} onClose={() => setToast(null)} />
+
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

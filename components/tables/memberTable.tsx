@@ -1,6 +1,6 @@
 import React from 'react';
 import { AdvisorInfoProps, TeamMemberInfoProps } from '@/types/member';
-import IntroCard from '@/components/intoCard';
+import IntroCard from '@/components/cards/intoCard';
 
 interface MemberTableProps {
     teamMembers: TeamMemberInfoProps[] | AdvisorInfoProps[];

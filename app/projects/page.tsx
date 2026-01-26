@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { title } from "@/components/primitives";
-import ProjectCard from "@/components/projectCard";
+import ProjectCard from "@/components/cards/projectCard";
 import { projects } from "@/lib/data/projects";
 import { teamStats } from "@/lib/data";
 

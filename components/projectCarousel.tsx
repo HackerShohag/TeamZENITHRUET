@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { Project } from "@/types/project";
-import ProjectCard from './projectCard';
+import ProjectCard from '@/components/cards/projectCard';
 
 interface ProjectCarouselProps {
     projects: Project[];

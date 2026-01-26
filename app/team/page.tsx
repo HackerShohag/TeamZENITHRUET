@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { title } from "@/components/primitives";
-import MemberTable from "@/components/memberTable";
+import MemberTable from "@/components/tables/memberTable";
 import NextLink from "next/link";
 import {
 	sysArchitects,

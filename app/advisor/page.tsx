@@ -1,5 +1,5 @@
 import { title } from "@/components/primitives";
-import AdvisorTable from "@/components/advisorTable";
+import AdvisorTable from "@/components/tables/advisorTable";
 import { advisors } from "@/lib/data/avisors";
 
 

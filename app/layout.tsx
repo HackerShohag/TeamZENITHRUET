@@ -3,10 +3,10 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "@/components/layout/navbar";
 import clsx from "clsx";
 
-import FooterSection from "@/components/footer";
+import FooterSection from "@/components/layout/footer";
 
 export const metadata: Metadata = {
 	title: {

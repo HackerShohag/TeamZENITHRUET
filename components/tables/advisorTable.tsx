@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamMemberInfo from '@/components/userInfo';
+import TeamMemberInfo from '@/components/cards/userInfo';
 import { AdvisorInfoProps } from '@/types/member';
 
 interface MemberTableProps {

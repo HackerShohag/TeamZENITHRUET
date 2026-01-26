@@ -9,7 +9,7 @@ import { Button } from "@nextui-org/button";
 
 import NextLink from "next/link";
 
-import { ThemeSwitch } from "@/components/theme-switch";
+import { ThemeSwitch } from "@/components/layout/theme-switch";
 
 import { Logo } from "@/components/icons";
 import { NavbarClient, NavLinks } from "./navbar-client";
