@@ -66,12 +66,12 @@ export function NavbarClient({ children }: NavbarClientProps) {
             {children}
 
             <NavbarMenu className="pt-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-3">
                     {siteConfig.navMenuItems.map((item, index) => (
                         <NavbarMenuItem key={`${item}-${index}`}>
                             <NextLink
                                 className={clsx(
-                                    "w-full px-4 py-3 rounded-xl text-lg font-medium transition-all duration-200",
+                                    "block w-full px-4 py-3 rounded-xl text-lg font-medium transition-all duration-200",
                                     pathname === item.href
                                         ? "bg-gradient-to-r from-[#E34333] to-[#A41C14] text-white"
                                         : "text-slate-700 dark:text-slate-300 hover:bg-red-50 dark:hover:bg-slate-800",

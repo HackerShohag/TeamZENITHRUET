@@ -400,3 +400,46 @@ export const scienceTeamMembers: TeamMemberInfoProps[] = [
     research: "",
   },
 ];
+
+// Website Developers
+export const websiteDevelopers: TeamMemberInfoProps[] = [
+  {
+    name: "Md. Abdullah Al Mamun",
+    avatarSrc: "/members/control/shohag.jpg",
+    department: "Computer Science & Engineering",
+    team: "Lead Developer",
+    designation: "Full Stack Developer",
+    email: "hackershohag@outlook.com",
+    linkedin: "https://www.linkedin.com/in/hackershohag/",
+    facebook: "https://www.facebook.com/HackerShohag",
+    github: "https://github.com/HackerShohag/",
+    website: "https://www.shohag.tech/",
+    research: "",
+  },
+  {
+    name: "Avik Biswas",
+    avatarSrc: "/members/control/avik.jpg",
+    department: "Mechanical Engineering",
+    team: "Developer",
+    designation: "Frontend Developer",
+    email: "avik46053@gmail.com",
+    linkedin: "https://www.linkedin.com/ivik-biswas-b4664221a/",
+    facebook: "https://www.facebook.com/avik.biswas.528/",
+    github: "https://github.com/avikbiswas123",
+    website: "",
+    research: "",
+  },
+  {
+    name: "Md. Abu-Talha Roni",
+    avatarSrc: "/members/electro/roni.jpg",
+    department: "Electrical & Electronic Engineering",
+    team: "Design",
+    designation: "Design Improvisor",
+    email: "abutalharoni10@gmail.com",
+    linkedin: "https://www.linkedin.com/in/mdabutalharoni",
+    facebook: "https://www.facebook.com/abutalharoni10",
+    github: "https://github.com/mdabutalharoni",
+    website: "",
+    research: "",
+  },
+];

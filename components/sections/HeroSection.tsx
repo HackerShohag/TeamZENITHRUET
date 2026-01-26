@@ -2,6 +2,7 @@
 
 import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
+import NextLink from "next/link";
 import { Button } from "@nextui-org/button";
 import { motion } from "framer-motion";
 import zenithDarkLogo from '@/public/zenith-black.png';
@@ -61,24 +62,24 @@ export default function HeroSection() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <NextLink href="/aknowledgements">
+                                <Button 
+                                    className="btn-zenith text-lg px-8 py-6"
+                                    size="lg"
+                                >
+                                    💖 Support Us
+                                </Button>
+                            </NextLink>
                             <Link 
                                 isExternal 
                                 href={teamStats.joinFormUrl}
                             >
                                 <Button 
-                                    className="btn-zenith text-lg px-8 py-6"
-                                    size="lg"
-                                >
-                                    🤝 Join Us
-                                </Button>
-                            </Link>
-                            <Link href="/contact">
-                                <Button 
                                     className="btn-zenith-outline text-lg px-8 py-6"
                                     size="lg"
                                     variant="bordered"
                                 >
-                                    📧 Contact Us
+                                    🤝 Join Us
                                 </Button>
                             </Link>
                         </div>
