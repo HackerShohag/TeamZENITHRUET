@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { title } from "@/components/primitives";
 import MemberTable from "@/components/memberTable";
+import NextLink from "next/link";
 import {
 	sysArchitects,
 	teamHead,
@@ -138,14 +139,12 @@ export default function TeamPage() {
 						We&apos;re always looking for passionate individuals to join our mission. 
 						Apply now and be part of something extraordinary!
 					</p>
-					<a 
-						href="https://forms.gle/YOUR_FORM_ID" 
-						target="_blank" 
-						rel="noopener noreferrer"
+					<NextLink 
+						href="/join"
 						className="inline-block px-8 py-3 bg-white text-[#E34333] font-bold rounded-full hover:bg-red-50 transition-all shadow-lg hover:shadow-xl"
 					>
 						Apply Now →
-					</a>
+					</NextLink>
 				</div>
 			</motion.section>
 		</div>

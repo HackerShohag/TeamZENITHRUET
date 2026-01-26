@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
 
 export default function SupportCTA() {
@@ -18,11 +19,10 @@ export default function SupportCTA() {
       <p className="text-slate-600 dark:text-slate-400 text-center mb-6">
         If you&apos;d like to support Team ZENITH RUET through donations, sponsorships, or in-kind contributions, we&apos;d love to hear from you!
       </p>
-      <NextLink
-        href="/contact"
-        className="btn-zenith"
-      >
-        Get in Touch →
+      <NextLink href="/support">
+        <Button className="btn-zenith">
+          Get in Touch →
+        </Button>
       </NextLink>
     </motion.div>
   );

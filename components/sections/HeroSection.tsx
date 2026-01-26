@@ -1,14 +1,13 @@
 'use client';
 
 import { Image } from "@nextui-org/image";
-import { Link } from "@nextui-org/link";
-import NextLink from "next/link";
 import { Button } from "@nextui-org/button";
 import { motion } from "framer-motion";
+import NextLink from "next/link";
 import zenithDarkLogo from '@/public/zenith-black.png';
 import zenithWhiteLogo from '@/public/zenith-white.png';
 import rover from '@/public/gallery/rover-rendered.png';
-import { teamStats, formattedStats } from "@/lib/data/stats";
+import { formattedStats } from "@/lib/data/stats";
 
 export default function HeroSection() {
     return (
@@ -62,7 +61,7 @@ export default function HeroSection() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <NextLink href="/aknowledgements">
+                            <NextLink href="/support">
                                 <Button 
                                     className="btn-zenith text-lg px-8 py-6"
                                     size="lg"
@@ -70,10 +69,7 @@ export default function HeroSection() {
                                     💖 Support Us
                                 </Button>
                             </NextLink>
-                            <Link 
-                                isExternal 
-                                href={teamStats.joinFormUrl}
-                            >
+                            <NextLink href="/join">
                                 <Button 
                                     className="btn-zenith-outline text-lg px-8 py-6"
                                     size="lg"
@@ -81,7 +77,7 @@ export default function HeroSection() {
                                 >
                                     🤝 Join Us
                                 </Button>
-                            </Link>
+                            </NextLink>
                         </div>
 
                         {/* Stats */}
