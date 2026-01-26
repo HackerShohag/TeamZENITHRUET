@@ -18,22 +18,28 @@ export interface ToastState {
 export function Toast({ message, type, onClose }: ToastProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, x: '-50%' }}
-      animate={{ opacity: 1, y: 0, x: '-50%' }}
-      exit={{ opacity: 0, y: 50, x: '-50%' }}
-      className={`fixed bottom-6 left-1/2 z-50 flex items-center gap-3 px-6 py-4 rounded-xl shadow-2xl ${
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      className={`fixed bottom-4 left-4 right-4 md:left-1/2 md:right-auto md:-translate-x-1/2 z-50 flex items-center gap-2 md:gap-3 px-4 py-3 md:px-6 md:py-4 rounded-xl shadow-2xl max-w-[calc(100vw-2rem)] md:max-w-md ${
         type === 'success' 
           ? 'bg-green-500 text-white' 
           : 'bg-red-500 text-white'
       }`}
     >
       {type === 'success' ? (
-        <FaCheckCircle className="w-5 h-5" />
+        <FaCheckCircle className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
       ) : (
-        <FaExclamationCircle className="w-5 h-5" />
+        <FaExclamationCircle className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
       )}
-      <span className="font-medium">{message}</span>
-      <button onClick={onClose} className="ml-2 hover:opacity-70 transition-opacity">✕</button>
+      <span className="text-sm md:text-base font-medium flex-1">{message}</span>
+      <button 
+        onClick={onClose} 
+        className="ml-1 md:ml-2 p-1 hover:opacity-70 transition-opacity flex-shrink-0 text-lg md:text-xl"
+        aria-label="Close"
+      >
+        ✕
+      </button>
     </motion.div>
   );
 }
