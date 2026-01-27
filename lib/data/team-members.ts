@@ -266,7 +266,7 @@ export const controlTeamMembers: TeamMemberInfoProps[] = [
     research: "https://scholar.google.com/citations?user=7kgLr-UAAAAJ&h",
   },
   {
-    name: "Md. Abdullah Al Mamun",
+    name: "Md. Abdullah Al Mamun (Shohag)",
     avatarSrc: "/members/control/shohag.jpg",
     department: "Computer Science & Engineering",
     team: "Control Team",
@@ -276,7 +276,7 @@ export const controlTeamMembers: TeamMemberInfoProps[] = [
     facebook: "https://www.facebook.com/HackerShohag",
     github: "https://github.com/HackerShohag/",
     website: "https://www.shohag.tech/",
-    research: "`",
+    research: "",
   },
   {
     name: "Saiful Islam",
@@ -404,7 +404,7 @@ export const scienceTeamMembers: TeamMemberInfoProps[] = [
 // Website Developers
 export const websiteDevelopers: TeamMemberInfoProps[] = [
   {
-    name: "Md. Abdullah Al Mamun",
+    name: "Md. Abdullah Al Mamun (Shohag)",
     avatarSrc: "/members/control/shohag.jpg",
     department: "Computer Science & Engineering",
     team: "Lead Developer",
