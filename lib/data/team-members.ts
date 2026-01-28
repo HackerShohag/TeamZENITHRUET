@@ -129,6 +129,19 @@ export const businessTeamMembers: TeamMemberInfoProps[] = [
 ];
 
 export const mechaTeamMembers: TeamMemberInfoProps[] = [
+    {
+    name: "Shyekh Bin Solayman",
+    avatarSrc: "/members/mecha/solayman.jpg",
+    department: "Mechanical Engineering",
+    team: "Mechanical Team",
+    designation: "Team Lead",
+    email: "shyekhbin01@gmail.com",
+    linkedin: "www.linkedin.com/in/shyekh-bin-solayman-000658312",
+    facebook: "https://www.facebook.com/share/19WCDGdaSM/",
+    github: "",
+    website: "",
+    research: "",
+  },
   {
     name: "Bishal Jahir",
     avatarSrc: "/members/mecha/bishal.jpg",
@@ -166,19 +179,6 @@ export const mechaTeamMembers: TeamMemberInfoProps[] = [
     linkedin: "https://www.linkedin.com/in/sonjoy-madrajee-a59239307",
     facebook: "https://www.facebook.com/share/17HpUwwAo1/",
     github: "https://github.com/SonjoyMadrajee",
-    website: "",
-    research: "",
-  },
-  {
-    name: "Shyekh Bin Solayman",
-    avatarSrc: "/members/mecha/solayman.jpg",
-    department: "Mechanical Engineering",
-    team: "Mechanical Team",
-    designation: "Team Member",
-    email: "shyekhbin01@gmail.com",
-    linkedin: "www.linkedin.com/in/shyekh-bin-solayman-000658312",
-    facebook: "https://www.facebook.com/share/19WCDGdaSM/",
-    github: "",
     website: "",
     research: "",
   },
