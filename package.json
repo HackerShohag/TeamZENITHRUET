@@ -44,5 +44,9 @@
     "tailwind-variants": "^0.1.20",
     "tailwindcss": "3.4.3",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3",
+    "tsx": "^4.21.0"
   }
 }
